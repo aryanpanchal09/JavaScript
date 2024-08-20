@@ -3,3 +3,5 @@ Get the User data....
 Processing user data ..
 
 Create an Avatar for User
+
+login and logout
