@@ -1,0 +1,162 @@
+
+GIT - Version Control System
+
+Version Control is a crucial aspect of modern software development, allowing developers to track and manage changes to code over time. Instead of overwriting existing files, Version Control Systems (VCS) create new versions of files when changes are made, enabling developers to revert to previous states of the project if necessary. This is why it is referred to as "Version Control."
+
+Example:
+- Version 1, Version 2, Version 3
+
+Types of Version Control Systems
+
+1. Local Version Control System
+   - This involves maintaining a local copy of the project on a developer's machine.
+   
+2. Centralized Version Control System (CVCS)
+   - A remote server stores all versions of the project, and developers work on copies of this central repository.
+   
+3. Distributed Version Control System (DVCS)
+   - Developers maintain both local and remote copies of the project, allowing them to work offline and later synchronize changes with the central repository.
+
+History of Git
+
+The need for an efficient VCS became evident when multiple developers around the world began collaborating on single projects.
+
+- Past: Initially, projects were archived as files, which made version control cumbersome.
+- 2002: BitKeeper, a proprietary version control system, became popular.
+- 2005: When BitKeeper started charging for its services, the Linux community developed Git as a free and open-source alternative. Git was created to support the development of the Linux kernel and quickly became a standard in software development.
+
+Basic Git Commands
+
+- Check Git Version:
+  git --version
+
+- Configure User Name and Email:
+  git config --global user.name "Aryan"
+  git config --global user.email "aryantech03@gmail.com"
+
+Understanding Git
+
+Git operates in two main stages:
+
+1. Working Directory: The local directory where changes are made.
+2. Staging Area: Files that have been modified and are marked to be tracked by Git for the next commit.
+
+Commit History
+
+- Local Repository: Stores the project on your computer.
+- Remote Repository: An online storage of the project, such as GitHub or GitLab.
+
+Initialize a Git Repository:
+git init
+- This command creates an empty Git repository and sets up the .git directory where all tracking information is stored, separate from your working directory.
+
+Check Repository Status:
+git status
+
+Managing Files with Git
+
+When Git is initialized, the default branch is named master. To rename it to main, delete the main file and reinitialize Git with:
+git init -b main
+
+Save Files in Git
+
+To save files in Git, follow these steps:
+
+1. Staging Area:
+   git add <file>
+
+2. Commit History:
+   git commit -m "Commit message"
+
+View Commit Log:
+git log
+- This shows the history of all commits made to the repository.
+
+Uncommitted Changes:
+If changes are not committed, they remain in the working directory. To stage these changes again:
+git add <file>
+
+Commit Without Staging Area:
+git commit -a -m "Message"
+- This command stages all modified files and commits them in one step.
+
+Managing Files and Branches
+
+- Add All Files at Once:
+  git add .
+
+- Delete a File:
+  1. Delete it manually, but it will still exist in Git.
+  2. Remove it from Git with:
+     git rm --cached <file>
+
+Cloning and Connecting Repositories
+
+To clone a repository:
+git clone <SSH-link>
+
+Example SSH link:
+git@github.com:aryanpanchal09/git_notes.git
+
+Connect Local to Remote Repository:
+1. Initialize Git:
+   git init
+2. Commit the changes:
+   git commit -m "First commit"
+3. Rename the branch to main:
+   git branch -M main
+
+Pushing Changes to Git
+
+To push changes to the remote repository:
+git push origin main
+
+View Remote Repositories:
+git remote -v
+
+Managing Tags
+
+- Create a Tag:
+  git tag -a v1.0 -m "1st release"
+
+- View Tag Information:
+  git show v1.0
+
+Branching and Merging
+
+- Create and Switch to a Branch:
+  git checkout -b <branchname>
+
+- Switch Between Branches:
+  git switch <branchname>
+
+- Delete a Branch:
+  git branch -d <branchname>
+
+Advanced Git Operations
+
+Merge Branches:
+git merge <branchname>
+- Ensure you are on the main branch before merging.
+
+Rebase for Clean Graphs:
+Rebasing helps in maintaining a cleaner project history by rearranging commits into a straight line.
+git rebase <branchname>
+
+Handling Conflicts:
+Conflicts during merging or rebasing can be resolved by manually merging the changes.
+
+Pull Requests, Stashing, and Forking
+
+Stashing Changes:
+If you want to temporarily save your changes without committing:
+git stash
+- To apply the stashed changes later:
+  git stash apply
+
+Forking a Repository:
+Forking allows you to create a personal copy of someone else's repository, which you can modify independently.
+
+Pull Requests
+
+A pull request is a way to contribute your changes back to the original repository. Once created, the repository owner can review and merge the changes into the main codebase.
