@@ -1,0 +1,15 @@
+Activities Perfrom during the whole timeline
+
+O - Start 
+
+Rounded Rectangle - Activity / Action Performed
+
+Diamond - Condition 
+
+----------
+            - fork - Parallel Processing Performed
+            - Join - Activity Join
+----------
+
+(O) - Finish
+
