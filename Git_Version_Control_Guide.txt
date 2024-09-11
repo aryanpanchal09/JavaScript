@@ -1,7 +1,8 @@
-
 GIT - Version Control System
 
 Version Control is a crucial aspect of modern software development, allowing developers to track and manage changes to code over time. Instead of overwriting existing files, Version Control Systems (VCS) create new versions of files when changes are made, enabling developers to revert to previous states of the project if necessary. This is why it is referred to as "Version Control."
+
+Rollback - Going to previous version when there is an error in Present Version 
 
 Example:
 - Version 1, Version 2, Version 3
@@ -160,3 +161,48 @@ Forking allows you to create a personal copy of someone else's repository, which
 Pull Requests
 
 A pull request is a way to contribute your changes back to the original repository. Once created, the repository owner can review and merge the changes into the main codebase.
+
+Diff Course 
+-----------
+
+Git Bash - Using Set of Commands 
+--------------------------------
+cd desktop 
+mkdir project 
+cd project - current directory
+touch story.txt - create new file 
+git init - for initializing the git 
+ls -a - to see the git files 
+git add .
+git status
+git log - to see commit history 
+git diff filename - to see the changes you made in the file 
+git checkout filename - to undo the changes you made in the file or simply to Rollback
+
+Github & Remote Repositories
+----------------------------
++ new repository
+Repository name - First
+
+Connect Git Bash Terminal with Git Repository
+---------------------------------------------
+git init 
+git status - to get the untracked file
+git log 
+git remote add origin URL (Https/SSH)
+git push -u origin master/main 
+
+Clonning 
+--------
+aos(animation on scroll) - repository clone 
+git clone URL(Https/SSH)
+
+Forking & Pulling Request 
+-------------------------
+fork - to copy the whole repository which will be restricted to your acc only 
+To commit change in the original repository use Pull request
+pull request - new pull request - create pull request 
+Origin acc - Merge pull request - confirm merge 
+
+U - means Untracked File 
+M - file modified
