@@ -1,0 +1,6 @@
+Javascript is the most popular development language used for creating Websites and Web_Development  
+
+JS is a programming language. We use it to give instructions to the computer  
+
+Chrome - Console - To clear console (Ctrl + L)
+alert("Popup");
