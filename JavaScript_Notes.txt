@@ -1,6 +1,86 @@
+INTRODUCTION
+------------
 Javascript is the most popular development language used for creating Websites and Web_Development  
 
 JS is a programming language. We use it to give instructions to the computer  
 
 Chrome - Console - To clear console (Ctrl + L)
-alert("Popup");
+alert("Popup"); -> Semicolon means here my sentence ends 
+
+console.log("Enter Anything"); - we can write this in Single Quotes('') also 
+console.log means we want to print it in the console 
+
+Javascript files extension .js 
+
+To connect JS file with Browser we need a HTML File (index for conventional means) - Shift + ! (Boiler plate code) - Shift + !!!
+
+VARIABLES 
+---------
+Variables are containers for data 
+In simple means Variables are just containers in which the data can vary 
+
+Value (14) - Memory Location () - Memory Location Address (radius)
+Value (14) - Memory Location () - Memory Location Address (age)
+
+age = 24;
+age 
+
+age + 1; // Output 25 
+
+name = "Aryan"
+name
+
+To print the value of Varibale 
+fullName = "Aryan Panchal";
+console.log(fullName);
+
+Always name the Varibale in a meaningful way
+
+Boolean - true or false value 
+
+Javascript is a dynamically typed language 
+It means in other languages we had to declared the variable type but not in Javascript
+Ex - Java fullName String we have to defined that in JS it's not necessary 
+
+JS interpreter automatically calculated the datatype 
+
+= -> assignment operator  
+a = b -> Programing means the value of B is assign to A
+
+Naming Convention in Variables 
+``````````````````````````````
+. Variable names are case sensitive ; "a" & "A" is different
+. Only letters, digits, underscore(_) and $ is allowed. (not even space)
+. Only a letter, underscore(_) or $ should be 1st character
+. Reserved words cannot be variable names
+  - console, break, do, while, class etc etc 
+
+1a = "string"; // _1a or $1a is allowed 
+console.log(1a); - Not allowed 
+
+Naming Convetion 
+````````````````
+fullName  - Camel Case - First word small Second word Big - best naming convention to follow in Programming language 
+full_name - snakecase 
+full-name - kebabcase 
+FullName  - Pascalcase
+
+let, const & var
+----------------
+The above ways in which we assigned the variables is not a good practise to assign value to variable 
+It simply means that we directly can't assign value to variables instead we use a keyword for that which are listed above 
+
+var : Variable can be re-declared & updated. A global scope variable - minimum use 
+var name = "JS";
+
+let : Variable cannot be re-declared but can be updated. A block scope variable - maximum use 
+let name = "JS";
+
+const : Variable cannot be re-declared or updated. A block scope variable - maximum use 
+const name = "JS";
+
+var - It's primarly used before 2015 but after ES6 JS update we started using let and const 
+The main problem in using var is it can be re-declared 
+var age = 24;
+var age = 25; 
+Which created a problem in bigger code that's why we don't use var now instead we started using let which doesn't allow re-declaration of var
