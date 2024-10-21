@@ -23,3 +23,48 @@ console.log("First JS Code");
 
 _$1a = "_ $ a-z A-Z is allowed in variable name";
 console.log(_$1a);
+
+// Variable 
+
+let a;
+a = 10;
+console.log(a); //undefined
+
+
+const b = 10;
+console.log(b); //error 
+
+
+// Block 
+// -----
+{
+  let a = 5;
+  console.log(a);
+}
+
+// let a = 10; it will give an error to initialize it use second block 
+
+{
+  let a = 10;
+  console.log(a);
+}
+
+typeof a;
+
+// Collection 
+
+const student = {
+    name : "Aryan",
+    age : 23,
+    subject : "js",
+};
+student["age"] + 1;
+
+student["age"] = student["age"] + 1;
+
+// To access a particular key 
+student['age']
+
+console.log(student.age);
+
+console.log(student['name']);

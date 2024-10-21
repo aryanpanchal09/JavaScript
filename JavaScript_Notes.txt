@@ -76,11 +76,79 @@ var name = "JS";
 let : Variable cannot be re-declared but can be updated. A block scope variable - maximum use 
 let name = "JS";
 
+let age = 24;
+age = 25;
+
+Here the age is now declared 25 and the memory space becomes same 
+
 const : Variable cannot be re-declared or updated. A block scope variable - maximum use 
 const name = "JS";
+
+const means the value is now constant and can't be changed 
+const age = 24;
+age = 25; // can't be declared - assignment to constant variable
+
+mainly used in Math problem
 
 var - It's primarly used before 2015 but after ES6 JS update we started using let and const 
 The main problem in using var is it can be re-declared 
 var age = 24;
 var age = 25; 
 Which created a problem in bigger code that's why we don't use var now instead we started using let which doesn't allow re-declaration of var
+
+Block 
+-----
+{
+  let a = 5;
+  console.log(a);
+}
+
+let a = 10; it will give an error to initialize it use second block 
+
+{
+  let a = 10;
+  console.log(a);
+}
+
+DATA TYPES IN JS 
+----------------
+Number, String, Boolean, Undefined, Null, BigInt, Symbol 
+
+To check the datatype of any variable we use 
+typeof variable name; - typeof a;
+
+(7) Primitive Data Type 
+-----------------------
+. Number 
+. String 
+. Boolean 
+
+Not generally used datatype
+. BigInt - let x = BigInt("123"); - 123n 
+. Symbol - let y = Symbol("Hello"!)
+
+Non-Primitive Data Type 
+-----------------------
+. Objects - It's a collection of values - key : value pair 
+  . Arrays
+  . Functions 
+
+let this collection be name as A - now the name of collection A is an Object 
+const A = {
+  a = 10;
+  b = 20;
+};
+
+To access a particular key 
+A['age];
+
+obj.keyname; 
+obj.['keyname'];
+
+console.log(student.age)
+
+console.log(student['age']);
+
+To change the value in Objects 
+``````````````````````````````
+student["age"] = student["age"] + 1;
