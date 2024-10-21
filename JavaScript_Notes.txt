@@ -152,3 +152,8 @@ console.log(student['age']);
 To change the value in Objects 
 ``````````````````````````````
 student["age"] = student["age"] + 1;
+
+const object key can be updated 
+
+String + operator it will join 
+"str" + 123 -> str123

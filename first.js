@@ -58,6 +58,9 @@ const student = {
     age : 23,
     subject : "js",
 };
+
+student['name'] = "rahul";
+
 student["age"] + 1;
 
 student["age"] = student["age"] + 1;
@@ -68,3 +71,15 @@ student['age']
 console.log(student.age);
 
 console.log(student['name']);
+
+const practisequestion01 = {
+    name: "shradhakhapra",
+    posts: 195,
+    followers: 569000,
+    following: 4,
+    isFollow: true
+};
+
+console.log(practisequestion01);
+
+console.log(typeof practisequestion01["isFollow"]);
