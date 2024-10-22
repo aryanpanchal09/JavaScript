@@ -1,0 +1,30 @@
+COMMENTS 
+--------
+// single line comment - Ctrl + /
+/* Multi line Comment */ - Alt + Shift + A 
+In html - <!-- -->
+In JS - /* */
+
+OPERATORS 
+---------
+ARITHMETIC OPERATORS
++, -, *, /
+
+. Modulus - %
+    If a divide by b then it will return remainder 
+    Ex - 5 modulus 2 is 1 
+
+. Exponentiatioin
+    Power ** / ^ 
+    Ex - 2 ** 3 = 8
+
+. Increment 
+. Decrement 
+
+a + b -> expression 
+a, b - operands
++ - operators 
+
+Unary Operators - Operators only require a single variable 
+a++ = a + 1
+a-- = a - 1
