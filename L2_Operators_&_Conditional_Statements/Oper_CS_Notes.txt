@@ -8,6 +8,7 @@ In JS - /* */
 OPERATORS 
 ---------
 ARITHMETIC OPERATORS
+--------------------
 +, -, *, /
 
 . Modulus - %
@@ -26,5 +27,35 @@ a, b - operands
 + - operators 
 
 Unary Operators - Operators only require a single variable 
-a++ = a + 1
+```````````````
+Post Increment 
+``````````````
+a++ = a + 1 - 
 a-- = a - 1
+
+Pre-Increment
+`````````````
+++a = 1 + a 
+
+ASSIGNMENT OPERATOR
+-------------------
+= += -+ *= %= **=
+
+left = right -> Value goes from right to left 
+
+a += 1 -> a = a + 1
+a +=4 -> a = a + 4
+
+COMPARISON OPERATORS 
+--------------------
+It always returns a boolean value 
+
+Equal to ==
+Equal to & type ===
+Not equal to != 
+Not equal to & type !==
+
+>, >=, <, <=
+
+In js equal to and not equal to don't check the datatype so if z = 5 and y = "5" they both are same 
+So to rectify it we use Equal to & type operator 
