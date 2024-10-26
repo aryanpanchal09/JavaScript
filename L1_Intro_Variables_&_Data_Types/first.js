@@ -27,11 +27,12 @@ console.log(_$1a);
 // Variable 
 
 let a;
-a = 10;
+/* a = 10; */
 console.log(a); //undefined
 
 
 const b = 10;
+/* const b; */ // we can't declare b in const we must assign the value
 console.log(b); //error 
 
 

@@ -59,3 +59,25 @@ Not equal to & type !==
 
 In js equal to and not equal to don't check the datatype so if z = 5 and y = "5" they both are same 
 So to rectify it we use Equal to & type operator 
+
+LOGICAL OPERATOS 
+----------------
+LOGICAL AND && - Con1 - True, Cond2 - True - Final answer True
+true true - true 
+true false - false 
+false false - false 
+
+LOGICAL OR || - Cond1 - True, Cond2 - False - Final answer True 
+true true - true 
+true false - true 
+false true - true
+false false - false 
+
+LOGICAL NOT !
+True - False 
+False - True 
+
+& - Bitwise Operator
+
+CONDITIONAL STATEMENTS
+----------------------
