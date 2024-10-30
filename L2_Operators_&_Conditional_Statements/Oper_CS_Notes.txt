@@ -44,7 +44,7 @@ ASSIGNMENT OPERATOR
 left = right -> Value goes from right to left 
 
 a += 1 -> a = a + 1
-a +=4 -> a = a + 4
+a += 4 -> a = a + 4
 
 COMPARISON OPERATORS 
 --------------------
@@ -81,3 +81,15 @@ False - True
 
 CONDITIONAL STATEMENTS
 ----------------------
+To implement some condition in the code 
+
+if Statement 
+
+let color;
+if(mode === "dark-mode"){
+    color = "black";
+}
+
+if - reserved keyword 
+() - paranthesis
+mode === "dark-mode" - condition/expression which can be either True or False

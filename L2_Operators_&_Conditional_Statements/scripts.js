@@ -125,3 +125,24 @@ console.log("5 <= 5", co1 <= co2);
 
     console.log("!(6 < 5)", !(a < b));
 }
+{
+    /* Conditional Statements */
+    let age = 20;
+    if(age > 18, age < 21){
+        console.log("You are in your 20's");
+    }
+    else{
+        console.log("you aren't in your 20's");
+    }
+}
+{
+    let mode = "light";
+    let color;
+    if(mode === "dark"){
+        color = "black";
+    }
+    if(mode === "light"){
+        color = "white";
+    }
+    console.log(color);
+}
