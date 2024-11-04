@@ -146,3 +146,109 @@ console.log("5 <= 5", co1 <= co2);
     }
     console.log(color);
 }
+{
+    let num = 7;
+    if(num % 2 === 0){
+        console.log(num, "is even");
+    }
+    else{
+        console.log(num, "is odd");
+    }
+}
+{
+    age = 25;
+    if(age<18){
+        console.log("junior");
+    }
+    else if(age > 60){
+        console.log("senior");
+    }
+    else{
+        console.log("middle");
+    }
+}
+{
+    let mode = "blue";
+    let color;
+    if(mode === "dark"){
+        color = "black";
+    }
+    else if(mode === "blue"){
+        color = "blue"
+    }
+    else if(mode === "pink"){
+        color = "pink";
+    }
+    else {
+        color = "white";
+    }
+    console.log(color);
+}
+{
+    let mode = "dark";
+    if(mode == "dark")
+        console.log(mode);
+}
+/* Ternery Operator */
+{
+    let age = 23;
+    /* let result = age >= 18 ? "adult" : "not adult"; */
+    age >= 18 ? console.log("adult") : console.log("not adult");
+    /* console.log(result); */
+}
+{
+    /* alert("hello!"); */
+    /* prompt("hello") */
+    let num = prompt("Enter a value:");
+    console.log(num);
+    if(num % 5 === 0){
+        console.log(num, "is a multiple of 5");
+    }
+    else{
+        console.log(num, "is not a multiple of 5");
+    }
+}
+{
+    let score = 82;
+    if(score >= 90 && score <= 100){
+        console.log("Grade A");
+    }
+    else if(score >= 70 && score <= 89){
+        console.log("Grade B");
+    }
+    else if(score >= 60 && score <= 69){
+        console.log("Grade C");
+    }
+    else if(score >= 50 && score <= 59){
+        console.log("Grade D");
+    }
+    else if(score >= 0 && score <= 49){
+        console.log("Grade F");
+    }
+    else{
+        console.log("Enter proper value");
+    }
+}
+{
+    let score = 82;
+    let grade;
+    if(score >= 90 && score <= 100){
+        grade = "A";
+    }
+    else if(score >= 70 && score <= 89){
+        grade = "B";
+    }
+    else if(score >= 60 && score <= 69){
+        grade = "C";
+    }
+    else if(score >= 50 && score <= 59){
+        grade = "D";
+    }
+    else if(score >= 0 && score <= 49){
+        grade = "F";
+    }
+    else{
+        console.log("Enter proper value");
+    }
+    console.log("Your Grade is",grade);
+}

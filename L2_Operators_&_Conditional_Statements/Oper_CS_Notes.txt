@@ -93,3 +93,34 @@ if(mode === "dark-mode"){
 if - reserved keyword 
 () - paranthesis
 mode === "dark-mode" - condition/expression which can be either True or False
+
+a%2 = 0 -> even number 
+a%2 != 0 -> odd number
+
+Syntax - Rules to follow 
+
+Else if Statements 
+
+TERNERY OPERATOR 
+----------------
+Only Operands in JS that takes three operands
+
+condition? true output : false output
+a ? b : c - condition ? expifTrue : expifFalse
+a condition 
+if a condition is true then b will execute or b is true 
+if not then c will execute means c is true and b is false 
+age > 18 ? "adult" : "not adult"
+
+MDN Docs 
+--------
+MDN Web Docs 
+
+Alert
+-----
+alert("alert");
+
+Prompt
+------
+Temporary way to take input from user
+prompt("hello");
