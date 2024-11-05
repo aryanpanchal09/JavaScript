@@ -1,0 +1,53 @@
+Loops
+-----
+Loops are used to execute a piece of code again and again 
+
+for loop 
+for(let i = 1; i <= 5; i++){
+    console.log("hii");
+}
+i = 1 - initilize - it happens only 1 time
+i <= 5 - stopping condition 
+i++ - updation
+
+i = 1, i <= 5 - T 
+i = 2, i <= 5 - T 
+i = 3, i <= 5 - T 
+i = 4, i <= 5 - T 
+i = 5, i <= 5 - T 
+i = 6, i <= 5 - F - Code execution stops 
+
+INFINITE Loops
+--------------
+A loop that never ends - to be never executed in a program 
+It occurs when stopping condition never fails 
+
+WHILE LOOPS 
+-----------
+while(condition){
+    work 
+}
+
+DO WHILE LOOPS 
+--------------
+Guarentee that it will one atleast 1 time 
+do{
+    // do some work
+}while(condition)
+
+FOR-OF LOOPS
+------------
+for(let val of strVar){
+    // loops on Strings and Arrays
+}
+
+only initization, no condition and updatation required
+not to be used for objects 
+
+FOR-IN LOOPS
+------------
+Used for objects with the help of keys
+for(let val of strVar){
+    // do some work
+}
+
