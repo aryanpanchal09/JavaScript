@@ -94,14 +94,58 @@ for(let i = 1; i <= 100; i++){
 }
 /* Create a game where you start any random number. Ask the user to keep guessing the game number until the user enters correct value */
 {
-    let gameNum = 5;
-    let userNum = prompt("Guess the Number: ");
+/*     let gameNum = 5;
+    let userNum = prompt("Guess the Number (Enter 5): "); */
     
     /* !== - will not work it's taking number as a string so we use != */
 
-    while(userNum != gameNum){
+/*     while(userNum != gameNum){
         userNum = prompt("You entered wrong number. Keep Guessing: ");
     }
 
-    console.log("Congratulations! you entered the right number it's",userNum);
+    console.log("Congratulations! you entered the right number it's",userNum); */
+}
+/* STRING */
+{
+    let str = "Apna Colledge";
+    let str2 = 'Apna Colledge';
+    console.log("str.length of Apna College is",str.length);
+    console.log("string position at 1 indices is",str[1]);
+}
+/* TEMPLATE LITERALS  */
+{
+    let specialsentence = `This is a template literal \n${1 + 2 + 3}`;
+    console.log(specialsentence);
+
+    let obj = {
+        item : "pen",
+        price : 10,
+    }
+    console.log("the price of",obj.item, "is", obj.price, "rupees");
+    /* to convert the above line in a single string */
+
+    let output = `the price of ${obj.item} is ${obj.price} rupees`;
+    console.log(output);
+}
+{
+    let str = "Aryan Panchal ";
+    let str2 = "Software Developer";
+    console.log(str.toUpperCase());
+    console.log(str.toLowerCase());
+    console.log(str.trim());
+    console.log(str.slice(6,9));
+
+    console.log(str + str2);
+    console.log(str.concat(str2));
+
+    console.log(str2.replace("Software","A Software")); /* will replace first software in str */
+    console.log(str2.replaceAll("Software","A Software")); /* will replace all Software in str2 */
+
+    console.log(str.charAt(3));
+}
+{
+    let usernum = prompt("Enter your username:");
+    console.log(usernum);
+    let new_username = `@${usernum}${usernum.length}`;
+    console.log(new_username);
 }

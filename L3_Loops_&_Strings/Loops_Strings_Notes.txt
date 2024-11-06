@@ -51,3 +51,59 @@ for(let val of strVar){
     // do some work
 }
 
+--
+
+STRINGS IN JS 
+-------------
+String is a sequence of characters used to represent text 
+
+Create String - let str = "Apna Colledge"
+String length - str.length
+String Indices - str[0], str[1], str[2]
+
+Inbuild properties & functions(method)
+
+Index - Indices both are same one is singular and one is plural 
+
+TEMPLATE LITERAL 
+----------------
+It's a way to have embedded expressions in strings 
+'example of temp literal'
+
+STRING INTERPOLATION 
+--------------------
+To create strings by doing substituion of placeholders
+`string text${expression} string text`;
+
+ESCAPE CHARACTERS 
+-----------------
+To break the line in console.log statement use 
+(\n) - to break the line, - they count as a single character 
+(\t) - to have the tab space;
+
+Ex - Apna\nColledge - str.length = 12
+
+STRING METHODS
+--------------
+They are built-in functions to manipulate a string 
+. str.toUpperCase()
+
+. str.toLowerCase()
+
+. str.trim() // removes whitespace from the starting and ending end 
+
+. str.slice(start, end?) // returns part of string - End values are non-inclusive
+
+. str1.concat(str2) // joins str2 with str1 
+
+. str.replace(searchVal, newVal)
+
+. str.charAt(idx)
+
+Method - A block of code which does some work for us
+Always remeber method doesn't change the value or string it creates a new one 
+
+Why does this happen ?
+Becuase Strings are Immutable in JS - their value can't be changed indirectly 
+
+Function - 
