@@ -1,0 +1,41 @@
+ARRAYS 
+------
+Important DataStructure to store different types of data 
+Used to store same type of Information in a linear fashion 
+
+Collections of Items 
+Items can be access acc to their index value 
+
+let heroes = ["hulk", "ironman"];
+let marks = [89,67,98,34];
+
+Multiple items store but name should be same
+
+Properties - returns a value 
+Methods - does some work 
+
+Arrays type of Object 
+
+ARRAY INDICES
+-------------
+How to access index in JS 
+arr[0] / marks[0]
+
+marks[0] = 98;
+
+Array value can be change easily but it's not applicable in String 
+
+Array are muttable 
+
+LOOPING 
+-------
+To print all elements of an array 
+
+for loop : length 
+for(let idx = 0; idx < arr.length; idx++){
+
+}
+remember idx < array.length not <= as it's always smaller than array length 
+
+ARRAYS METHODS 
+--------------
