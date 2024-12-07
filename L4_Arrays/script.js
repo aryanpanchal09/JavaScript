@@ -61,3 +61,43 @@ Change the array to store final price after applying offer*/
     }
     console.log(items);
 }
+/* Array Methods 
+Push Method */
+{
+    let foodItems = ["potato","apple","kiwi"];
+    console.log(foodItems);
+    foodItems.push("chips", "burger", "panner");
+    console.log(foodItems);
+}
+/* Pop Method */
+{
+    let foodItems = ["potato","apple","kiwi","chips", "burger", "panner"];
+    console.log(foodItems);
+    // foodItems.pop();
+    let deletedItem = foodItems.pop();
+    console.log(foodItems);
+    console.log("deleted",deletedItem);
+}
+/* toString Method */
+{
+    let foodItems = ["potato","apple","kiwi","chips", "burger", "panner"];
+    console.log(foodItems);
+    console.log(foodItems.toString());
+}
+/* concat method  */
+{
+    let marvel_heroes = ["thor","spiderman","ironman"];
+    let dc_heros = ["superman","batman"];
+    let indian_heroes = ["minnal_muruli", "hanu_man"];
+    let heroes = marvel_heroes.concat(dc_heros,indian_heroes);
+    console.log(heroes);
+}
+/* unshift & shift method */
+{
+    let marvel_heroes = ["thor","spiderman","ironman"];
+    marvel_heroes.unshift("antman");
+    console.log(marvel_heroes);
+
+    marvel_heroes.shift("thor");
+    console.log(marvel_heroes);
+}

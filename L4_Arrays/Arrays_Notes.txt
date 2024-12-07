@@ -39,6 +39,17 @@ remember idx < array.length not <= as it's always smaller than array length
 
 ARRAYS METHODS 
 --------------
-Push(): add to end 
-Pop(): delete from end & return 
+2 Methods
+- Change 
+- Don't change give back new array 
+
+push(): add to end in array 
+pop(): delete from end & return 
 toString(): converts array to string 
+concat(): joins multiple arrays & returns result 
+unshift(): add to start - It's equivilant to push method
+shift(): delete from start & return 
+slice(): returns a piece of the array 
+         slice(startldx, endldx)
+splice(): change original array(add,remove,replace)
+         splice(startldx,delCount,newEl1...)
