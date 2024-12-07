@@ -39,3 +39,6 @@ remember idx < array.length not <= as it's always smaller than array length
 
 ARRAYS METHODS 
 --------------
+Push(): add to end 
+Pop(): delete from end & return 
+toString(): converts array to string 
