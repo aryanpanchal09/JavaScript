@@ -49,7 +49,12 @@ toString(): converts array to string
 concat(): joins multiple arrays & returns result 
 unshift(): add to start - It's equivilant to push method
 shift(): delete from start & return 
-slice(): returns a piece of the array 
+slice(): returns a piece of the array - Same working as String Method - don't change in original array 
          slice(startldx, endldx)
+        - Ending index is non-inclusive - End index will not include 
+        - If no specific slice is given slice() if it's null then it's useful for creating an copy of an array 
 splice(): change original array(add,remove,replace)
          splice(startldx,delCount,newEl1...)
+         - If only 1 value is given then it will return only 1 element 
+
+

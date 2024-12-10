@@ -101,3 +101,33 @@ Push Method */
     marvel_heroes.shift("thor");
     console.log(marvel_heroes);
 }
+/* slice */
+{
+    let marvel_heroes = ["thor","spiderman","ironman","dr_strange"];
+    console.log(marvel_heroes);
+    console.log(marvel_heroes.slice(1,3));
+}
+/* splice */
+{
+    let marvel_heroes = ["thor","spiderman","ironman","dr_strange"];
+    console.log(marvel_heroes);
+    /* Remove Element */
+    console.log(marvel_heroes.splice(1,1,"hulk"));
+    console.log(marvel_heroes);
+    /* Add Element */
+    console.log(marvel_heroes.splice(1,0,"spiderman"));
+    console.log(marvel_heroes);
+}
+/* Practise Question */
+{
+    let Array = ["bloomberg","microsoft","uber","google","ibm","netflix"]
+    console.log(Array);
+    /* Remove the first company from the array */
+    console.log(Array.slice(0));
+    /* Remove Uber & Add Ola in it's place */
+    console.log(Array.splice(2,1,"Ola"));
+    console.log(Array);
+    /* Add Amazon at the end */
+    console.log(Array.splice(6,0,"Amazon"));
+    console.log(Array);
+}
