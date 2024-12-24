@@ -1,0 +1,8 @@
+Elements starting with <>
+For ex: html, head, body, title 
+
+Attributes ex: charset, name, rel
+
+.header-left - To create a div with classname header-left
+
+Html file complete - All html file wrapped in wrap/container
