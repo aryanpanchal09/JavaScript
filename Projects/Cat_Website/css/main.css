@@ -87,6 +87,7 @@ a.primary-cta {
     font-size: 1.3rem;
     color: black;
     border-radius: .3em;
+    margin-top: 3em;
 }
 
 .cat {
@@ -186,6 +187,15 @@ a.primary-cta {
     }
     .cat {
         margin-top: 0;
+
+        .inner-circle {
+            width: 500px;
+            height: 500px;
+        }
+        .outer-circle {
+            width: 1000px;
+            height: 1000px;
+        }
     }
 
     .cat-container {
@@ -194,6 +204,30 @@ a.primary-cta {
         width: 50%;
         top: 20%;
         right: 0;
+    }
 
+}
+
+@media (min-width: 1200px) {
+
+    .wrap {
+        margin: 0 auto;
+        padding: 0 2em;
+        max-width: 1200px;
+    }
+
+    a.primary-cta {
+        display: inline-block;
+        width: auto;
+        padding: 1em 2em;
+    }
+
+    .cat {
+        position: relative;
+
+        img {
+            max-width: 400px;
+            left: 50%
+        }
     }
 }
