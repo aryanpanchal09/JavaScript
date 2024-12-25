@@ -1,3 +1,22 @@
-body{
-    background-color: white;
+.hide-mobile
+{
+    display: none;
+}
+
+body
+{
+    background-color: #FFFBF3;
+    margin: 0;
+    font-family: 'Lato';
+}
+
+.wrap
+{
+    margin: 2em;
+}
+
+header
+{
+    display: flex;
+    justify-content: space-between;
 }

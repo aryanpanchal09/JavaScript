@@ -6,3 +6,11 @@ Attributes ex: charset, name, rel
 .header-left - To create a div with classname header-left
 
 Html file complete - All html file wrapped in wrap/container
+
+CSS File 
+--------
+Property : Value 
+
+id - it's has to be unique 
+class - .classname 
+html element - body{} - direct implementation 
