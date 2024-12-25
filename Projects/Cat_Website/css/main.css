@@ -78,7 +78,6 @@ p {
 a.primary-cta {
     background-color: #FFA800;
     padding: 1em;
-    /* width: calc(100% - 2em); */
     width: 100%;
     box-sizing: border-box;
     display: block;
@@ -93,14 +92,14 @@ a.primary-cta {
 .cat {
     position: relative;
     height: 500px;
-    width: 100%;
+    width: 125%;
     margin-top: 3em;
 
     img {
         width: 70%;
         position: absolute;
-        left: 50%;
-        transform: translateX(-50%);
+        left: 58%;
+        transform: translateX(-65%);
     }
 
     .inner-circle, .outer-circle {
@@ -108,7 +107,7 @@ a.primary-cta {
         border-radius: 50%;
         left: 50%;
         top: 50%;
-        transform: translate(-50%, -50%);
+        transform: translate(-60%, -60%);
     }
 
     .inner-circle {
@@ -123,5 +122,78 @@ a.primary-cta {
         width: 500px;
         height: 500px;
         z-index: -2;
+    }
+}
+
+@media (min-width: 750px) {
+    wrap {
+        margin: 0 4em;
+    }
+
+    .hide-desktop {
+        display: none;
+    }
+    
+    .hide-mobile {
+        display: block;
+    }
+
+    .header-left {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 1em;
+
+        .divider {
+            height: 50px;
+            width: 1px;
+            border-right: 1px solid gray;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+            font-size: 1.2rem;
+        }
+    }
+
+    nav ul {
+        position: unset;
+        background: none;
+        display: flex;
+        gap: 2em;
+        height: auto;
+        width: auto;
+        transform: translateX(0%);
+        
+        li a {
+            font-size: 1.2rem;
+        }
+    }
+}
+
+@media (min-width: 950px) {
+    h1, p {
+        text-align: left;
+    }
+
+    h1 img {
+        margin: 0;
+    }
+
+    main {
+        width: 50%;
+    }
+    .cat {
+        margin-top: 0;
+    }
+
+    .cat-container {
+        position: absolute;
+        z-index: -1;
+        width: 50%;
+        top: 20%;
+        right: 0;
+
     }
 }
