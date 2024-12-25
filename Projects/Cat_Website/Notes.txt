@@ -14,3 +14,11 @@ Property : Value
 id - it's has to be unique 
 class - .classname 
 html element - body{} - direct implementation 
+
+position: fixed - It's stuck on the webpage for navigation 
+
+How giving margin and padding work ? - top right bottom left (Clockwise)
+
+transform: translateX(100%); - To hide a property 
+
+margin: 0 auto - It will keep the text or img center no matter what 
