@@ -1,3 +1,27 @@
 FUNCTIONS IN JS 
 ---------------
 Block of code that performs a specific task, can be invoked whenever needed
+We always use Parenthesis() with Function 
+Function paramaters are like local variables of function. They are valid within block scope {}
+
+Function Definition 
+-------------------
+function functionName(){
+    // do some work
+}
+
+function functionName(param1,param2...){
+    //do some work
+}
+
+Function Call
+-------------
+functionName();
+
+ARROW FUNCTION 
+--------------
+Compact way of writing a function 
+
+const functionName = (param1,param2...) => {
+    // do some work
+}
