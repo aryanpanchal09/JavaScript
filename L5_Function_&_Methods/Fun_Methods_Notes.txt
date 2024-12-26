@@ -25,3 +25,4 @@ Compact way of writing a function
 const functionName = (param1,param2...) => {
     // do some work
 }
+
