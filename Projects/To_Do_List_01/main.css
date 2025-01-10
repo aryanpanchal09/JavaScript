@@ -1,6 +1,14 @@
+.p1{
+    font-style: italic;
+}
+
+body{
+    background-color: #FFFBF3;
+}
+
 .box {
-    width: 200px;               /* Set the width of the box */
-    height: 100px;              /* Set the height of the box */
+    width: 150px;               /* Set the width of the box */
+    height: 170px;              /* Set the height of the box */
     background-color: white;  /* Background color */
     border: 3px solid black;     /* Border properties */
     padding: 10px;              /* Space inside the box */

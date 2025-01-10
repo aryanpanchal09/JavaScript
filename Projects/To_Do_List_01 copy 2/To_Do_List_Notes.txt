@@ -1,21 +1,3 @@
-.p1{
-    font-style: italic;
-}
-body{
-    background-color: #FFFBF3;
-}
-/* .box {
-    width: 100px;
-    height: 120px;
-    background-color: white;
-    border: 2px solid black;
-    border-radius: 0.2em;
-    padding: 10px;
-    margin: 10px;
-} */
-
-/*  */
-
 .box {
     width: 200px;               /* Set the width of the box */
     height: 100px;              /* Set the height of the box */
@@ -29,7 +11,13 @@ body{
 
 .container {
     display: flex;
-    flex-wrap: wrap; /* Allows the boxes to wrap into new rows */
+    flex-direction: row; /* default */
     justify-content: space-between;
-/* Spaces the boxes evenly */
+    flex-wrap: wrap;
+    /* align-items: baseline */;
 }
+
+/* .box1{
+    font-size: 1.5rem;
+}
+ */
