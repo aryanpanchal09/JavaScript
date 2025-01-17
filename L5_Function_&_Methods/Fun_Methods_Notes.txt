@@ -20,7 +20,7 @@ functionName();
 
 ARROW FUNCTION 
 --------------
-Compact way of writing a function 
+Compact way of writing a function - Are part of Arrow Function 
 
 const functionName = (param1,param2...) => {
     // do some work

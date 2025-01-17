@@ -34,3 +34,28 @@ myFunction();
     let val = sum(3,4);
     console.log(val);
 }
+
+{
+    for(let i = 0; i <= 5; i++){
+        console.log(i,"hii");
+    }
+} 
+
+/* Arrow Function  */
+
+    function sum(a, b){
+        return a + b;
+    }
+
+    const arrowSum = (a, b) => {
+        console.log(a + b)
+    }
+
+    function multi(a, b){
+        return a * b;
+    }
+
+    const arrowMulti = (a, b) => {
+        console.log(a * b)
+    }
+
