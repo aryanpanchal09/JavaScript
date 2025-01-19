@@ -21,8 +21,15 @@ functionName();
 ARROW FUNCTION 
 --------------
 Compact way of writing a function - Are part of Arrow Function 
+Mainly used for small programs to return or print something.
 
 const functionName = (param1,param2...) => {
     // do some work
 }
+Example : 1
+const printHello = () => {
+    console.log("hello");
+};
 
+Example : 2 
+const printHello = () => console.log("hello");
