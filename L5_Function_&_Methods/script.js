@@ -76,3 +76,51 @@ function countVowels(str) {
     };
     console.log("The number of vowels is : ",count);
 };
+
+/* Create an arrow function to perform the same task */
+
+const countVow = (str) => {
+    let count = 0;
+    //"Hello", count = 2
+    for (const char of str) {
+        if (char === "a" || char === "e" || char === "i" || char === "o" || char === "u") {
+            count++;
+        };
+    };
+    console.log("The number of vowels is : ",count);
+};
+
+/* forEach LOOP IN ARRAYS */
+function abc() {
+    console.log("hello");
+}
+function myFunc(abc) {
+    return abc;
+}
+
+/* forEach Working Mechanism */
+{
+  let arr = [1, 2, 3, 4, 5];
+
+  arr.forEach(function printVal(val) {
+    console.log(val);
+  });
+}
+
+{
+  let arr = [1, 2, 3, 4, 5];
+
+  arr.forEach((val) => {
+    console.log(val);
+  });
+}
+
+{
+  let arr = ["pune", "hyderabad", "ahmedabad"];
+
+  arr.forEach((val, idx, arr) => {
+    console.log(val.toUpperCase(), idx, arr);
+  });
+}
+  
+ 

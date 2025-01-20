@@ -13,7 +13,7 @@ function functionName(){
 function functionName(param1,param2...){
     //do some work
 }
-
+ 
 Function Call
 -------------
 functionName();
@@ -33,3 +33,24 @@ const printHello = () => {
 
 Example : 2 
 const printHello = () => console.log("hello");
+
+forEach LOOP IN ARRAYS
+----------------------
+arr.forEach(callBackFunction)
+CallbackFunction : Here, it's a function to execute for each element in the Array 
+A callback is a function passed as an argument to another function 
+
+arr.forEach((val) => {
+    console.log(val);
+}); 
+ 
+Method - abc.toUpperCase() - here toUpperCase is a method 
+Function - normal blackbox - gives outpu t on the basis of input 
+Function associated with object becomes an method 
+
+Functions in JS can be passed as parameters also used to return a function value
+
+HIGHER ORDER FUNCTIO  N/METHODS  - INTERVIEW QUESTION FOR WEB DEVELOPMENT 
+-----------------------------
+Take other function's as a parameter or return a function 
+For ex - forEach whose parameter is to return another function that why it's a higher order function 
