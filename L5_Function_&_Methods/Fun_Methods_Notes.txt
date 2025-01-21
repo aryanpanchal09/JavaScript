@@ -54,3 +54,26 @@ HIGHER ORDER FUNCTIO  N/METHODS  - INTERVIEW QUESTION FOR WEB DEVELOPMENT
 -----------------------------
 Take other function's as a parameter or return a function 
 For ex - forEach whose parameter is to return another function that why it's a higher order function 
+
+SOME MORE ARRAY METHODS 
+-----------------------
+MAP
+- Creates a new array with the results of some operation. The value its callback returns are used to form new array
+
+- Similar to forEach but this method returns new array
+
+arr.map(callbackFnx(value, index, array))
+
+Example :
+let newArr = arr.map((val) => {
+    return val*2;
+})
+
+FILTER METHOD 
+- Creates a new array of elements that give true for a condition/filter.
+
+Example : all even elements 
+let newArr = arr.filter((val) => {
+    return val % 2 === 0;
+})
+

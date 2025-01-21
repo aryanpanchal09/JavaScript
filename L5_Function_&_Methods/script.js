@@ -123,4 +123,33 @@ function myFunc(abc) {
   });
 }
   
- 
+/* practise question */
+/* For a given array of numbers, print the square of each value using the ForEach loop  */
+
+{
+  let arr = [1, 2, 3, 4];
+
+  arr.forEach((val) => {
+    console.log(val * val);
+  });
+}
+
+/* another way of doing the above problem */
+{
+  let arr = [4, 8, 12, 16];
+
+  let calcSquare = (num) => {
+    console.log(num ** 2);
+  };
+
+  arr.forEach(calcSquare);
+}
+
+/* Map Method */
+{
+  let arr = [7, 8, 9];
+
+  let newArr = arr.map((val) => {
+    return val ** 2;
+  });
+}
