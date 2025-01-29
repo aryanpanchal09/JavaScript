@@ -220,13 +220,28 @@ first add sum save in res only that's how the loop continues
 }
 
 /* Take a number n as input from user. Create an array of numbers from 1 to n. Use the reduce method to calculate sum of all the numbers in the array. Use the reduce method to calculate product of all numbers in the array */
-let num = prompt("Enter a value between 1 to 10 : ");
-console.log(num);
+{
+  let num = prompt("Enter a number : ");
+  console.log(num);
 
-let arr = [];
+  let arr = [];
 
-for(i=1; i<=num; i++){
-  arr[i-1] = i;
+  for (i = 1; i <= num; i++) {
+    arr[i - 1] = i;
+  }
+
+  console.log(arr);
+
+  let sum = arr.reduce((res, curr) => {
+    return res + curr;
+  });
+
+  console.log("sum = ", sum);
+  console.log(arr);
+
+  let factorial = arr.reduce((res, curr) => {
+    return res * curr;
+  });
+
+  console.log("factorial = ", factorial);
 }
-
-console.log(arr);
