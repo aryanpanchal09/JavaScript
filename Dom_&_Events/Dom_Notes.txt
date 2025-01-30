@@ -1,0 +1,18 @@
+DOM - Document Object Model 
+HTML 
+----
+Head - Website Name
+Body - Content Tags
+Link - extra information is attributes [Ex : <link rel="stylesheet" href="style.css">]
+ 
+Advantages 
+----------
+Readability - Helpful in Code Review
+Modular - Divide the code into different parts 
+Browser Caching - Loading Time Faster
+
+WINDOW OBJECT
+-------------
+The window object represents an open window in a browser. It is browser's object(not js) & is automatically created by browser.
+It's a global object with lots of properties & methods.
+
