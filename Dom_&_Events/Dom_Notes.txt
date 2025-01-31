@@ -39,11 +39,52 @@ DOM MANIPULATION
 ----------------
 Selecting with id 
 - document.getElementById("myId")
+- for id use # - to be unique for each element
+- when search for id that doesn't exist we get null result 
 
 Selecting with class 
 - document.getElementsByClassName("myClass")
+- for class use .
+- returns HTMl collection - which is similar to Array
+- when search for class that doesn't exist we get empty html array
 
 Selecting with tag 
 - document.getElementsByTagName("p")
 
+Query Selector 
+- document.querySelector("myId / myClass / tag")
+- returns first element
+
+- document.querySelectorAll("myId / myClass /tag")
+- returns a NodeList
+
+* DOM Tree each and every element become a node
+
 * If we write our script tag in head then we won't be able to access our Html body - It will return null - that's why we have to write it just before closing of body tag
+
+PROPERTIES - we can get,set(update),change element
+----------
+tagName : returns tag for element nodes 
+Ex - submit.tagName 
+
+innerText : returns the text content of the element and all its children
+
+innerHTML : returns the plain text or HTML contents in the element 
+
+textContent : returns textual content even for hidden elements
+
+*children - tree like structure in dom where the parent tag is the main tag then the element in branch is known as child tag creates a hierarchy of structure
+
+Parent - Child - Sibling(on same level) - Descendants
+
+Nodes properties
+fristChild property 
+- The read-only fristChild property of the Node interface returns the node's first child in the tree, or null if the node has no children.
+- If the node is a Document, this property returns the first node in the list of its direct children 
+
+
+DOM TREE NODES TYPES 
+--------------------
+. Text Nodes 
+. Comment Nodes 
+. Elements Nodes - Mostly used 
