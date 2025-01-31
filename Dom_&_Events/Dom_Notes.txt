@@ -16,3 +16,34 @@ WINDOW OBJECT
 The window object represents an open window in a browser. It is browser's object(not js) & is automatically created by browser.
 It's a global object with lots of properties & methods.
 
+Document Object Model - When a web page is loaded, the browser creates a Document Object Model of the page
+
+Html code transfrom into object in js file -> document object -> Window object
+Html code is available in document object & document object is available in window object 
+
+CONSOLE
+--------
+window
+window.document 
+window.dir -> special objects like document its properties & method print / to print oject we use window.dir not console.log(window.document)
+console.log(window.document)
+
+Document - model / representation of html code
+
+DYNAMICALLY CHANGE WEBSITE HTML CODE
+------------------------------------
+document.body.style.background = "green";
+document.body.childNodes[1].innerText="abcd";
+
+DOM MANIPULATION 
+----------------
+Selecting with id 
+- document.getElementById("myId")
+
+Selecting with class 
+- document.getElementsByClassName("myClass")
+
+Selecting with tag 
+- document.getElementsByTagName("p")
+
+* If we write our script tag in head then we won't be able to access our Html body - It will return null - that's why we have to write it just before closing of body tag
