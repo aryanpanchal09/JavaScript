@@ -70,18 +70,36 @@ Ex - submit.tagName
 innerText : returns the text content of the element and all its children
 
 innerHTML : returns the plain text or HTML contents in the element 
+- *Difference Between innerText & innerHTMl is innerText will only return the text while the innerHTML will also return the HTML tags related to element
 
 textContent : returns textual content even for hidden elements
+- Dynamically change the web content 
 
 *children - tree like structure in dom where the parent tag is the main tag then the element in branch is known as child tag creates a hierarchy of structure
 
 Parent - Child - Sibling(on same level) - Descendants
 
-Nodes properties
+Nodes properties : 
+------------------
 fristChild property 
 - The read-only fristChild property of the Node interface returns the node's first child in the tree, or null if the node has no children.
 - If the node is a Document, this property returns the first node in the list of its direct children 
 
+lastChild property 
+- The read-only lastChild property of the Node interface returns the last child of the node, or null if there are no child nodes 
+
+Example : 
+---------
+document.querySelector("div")
+document.querySelector("div").children;
+
+div.innerText 
+div.innerHTML 
+
+div.innerText = "abcd";
+div.innerHTML = "<div>innerHTML<div>"
+
+div.textContent;
 
 DOM TREE NODES TYPES 
 --------------------

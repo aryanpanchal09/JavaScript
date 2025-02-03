@@ -1,0 +1,15 @@
+h1 {
+    color: white;
+    background-color: darkgray;
+}
+.heading{
+    color: antiquewhite;
+}
+.box {
+    width: 100px;
+    height: 100px;
+    padding: 25px;
+    margin: 5px;
+    border: 0.5px black solid;
+    text-align: center;
+}

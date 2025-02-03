@@ -47,4 +47,30 @@ console.dir(parahs);
   console.dir(buttonid);
 }
 
-console.dir(document.body.firstChild);
+{
+  console.dir(document.body.firstChild);
+}
+
+{
+  let div = document.querySelector("div");
+  console.dir(div);
+}
+
+{
+  let h4 = document.querySelector("h4");
+  console.dir(h4.innerText);
+
+  h4.innerText = h4.innerText + " from Javascript";
+} // concatinating the string
+
+let divs = document.querySelectorAll("div");
+console.log(divs);
+
+let idx = 1;
+for(div of divs){
+  console.log(div.innerText);
+  div.innerText = `value changes ${idx}`;
+  idx++;
+}
+
+/* divs[4].innerText = "Value Changed HAHA"; */
