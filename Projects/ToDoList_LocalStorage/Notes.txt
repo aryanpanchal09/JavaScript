@@ -1,0 +1,4 @@
+taskInput.value -> gets the value of the input field in HTML file
+Ex - when the user writes something in the input field
+
+taskList.querySelector(li).forEach(function(item)) -> "item" in this case is a reference to each individual "li" element we are getting from the querySelector which we then put (push) into the array
