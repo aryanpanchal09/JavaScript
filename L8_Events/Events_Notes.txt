@@ -1,0 +1,11 @@
+EVENTS IN JS 
+------------
+The change in the state of an object is known as an Event 
+Events are fired to notify code of "interesting changes" that may affect code execution 
+
+Mouse events (click, double click etc..) -> onclick, ondblclick
+Keyboard events (keypress, keyup, keydown)
+Form events (submit etc..)
+Print event & many more
+
+Inline Event Handling 

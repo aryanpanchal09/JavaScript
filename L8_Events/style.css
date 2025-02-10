@@ -1,0 +1,8 @@
+div {
+    background-color: antiquewhite;
+    text-align: center;
+    height: 100px;
+    width: 100px;
+    border: 1px solid black;
+    padding: 5px;
+}
