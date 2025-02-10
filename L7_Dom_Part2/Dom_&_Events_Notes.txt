@@ -26,3 +26,5 @@ node.remove() -> removes the node
 
 appendChild();
 removeChild();
+
+classList property -> It's a read-only property that returns a live DOMTokenList collection of the class attributes of the element. This can then be used to manipulate the class list
