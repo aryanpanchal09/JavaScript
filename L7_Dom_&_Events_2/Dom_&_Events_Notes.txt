@@ -1,0 +1,12 @@
+DOM MANIPULATION 
+----------------
+
+ATTRIBUTES
+----------
+* Addition value given to any element is known as Attributes 
+getAttribute(attr) -> to get the attribute value 
+setAttribute(attr,value) -> to set the attribute value 
+
+STYLE 
+-----
+node.style

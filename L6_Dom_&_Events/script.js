@@ -74,3 +74,12 @@ for(div of divs){
 }
 
 /* divs[4].innerText = "Value Changed HAHA"; */
+
+function createHelloWorld() {
+  return function() {
+      return "Hello World";
+  }
+};
+
+const helloWorldFn = createHelloWorld();
+console.log(helloWorldFn());
