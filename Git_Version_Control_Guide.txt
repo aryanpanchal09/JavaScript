@@ -206,3 +206,8 @@ Origin acc - Merge pull request - confirm merge
 
 U - means Untracked File 
 M - file modified
+
+If You Haven’t Pushed the Commit Yet
+------------------------------------
+This will modify the last commit message locally
+- git commit --amend -m "New commit message"
