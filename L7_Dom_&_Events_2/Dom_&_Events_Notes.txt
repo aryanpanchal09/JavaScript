@@ -23,3 +23,6 @@ node.after(el) -> adds after the node (outside)
 DELETE ELEMENTS
 ---------------
 node.remove() -> removes the node
+
+appendChild();
+removeChild();

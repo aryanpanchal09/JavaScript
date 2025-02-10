@@ -23,10 +23,26 @@ para.setAttribute("class", "123"); */
   div.style.fontSize = "26px";
   /* div.innerText = "Hello"; */
 }
-/* Add new attribute with JS */
-let newBtn = document.createElement("button");
-newBtn.innerText = "click me";
-console.log(newBtn);
-/* Element is created but now we have to add it to the tree to show in page  */
-let div = document.querySelector("div");
-div.append(newBtn);
+{
+  /* Add new attribute with JS */
+  let newBtn = document.createElement("button");
+  newBtn.innerText = "click me";
+  console.log(newBtn);
+  /* Element is created but now we have to add it to the tree to show in page  */
+  let div = document.querySelector("div");
+  div.append(newBtn);
+  /* div.prepend(newBtn);
+div.before(newBtn);
+div.after(newBtn); */
+
+  /* Create a New Heading */
+  let newHeading = document.createElement("h1");
+  newHeading.innerText = "Heading created in JS";
+
+  document.querySelector("p").append(newHeading);
+  /* document.querySelector("body").prepend(newHeading); */
+
+  /* TO REMOVE ANY ELEMENT */
+  /* let para = document.querySelector("p");
+para.remove(); */
+}
