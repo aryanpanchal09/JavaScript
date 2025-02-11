@@ -9,3 +9,37 @@ Form events (submit etc..)
 Print event & many more
 
 Inline Event Handling 
+---------------------
+- If both Inline and Outside JS event handling is been done then the priority will be given to Outside JS 
+- If 2 event handling has been done then the new one will be executed 
+
+EVENT OBJECT 
+------------
+It's a object that has details about the event 
+All event handlers have access to the Event Object's properties and methods
+node.event = (e) => {
+    // handle here 
+}
+
+e.target, e.type, e.clientX, e.clientY
+
+Mainly Used 
+- console.log(evt.type);
+- console.log(evt.target);
+
+EVENT LISTENERS 
+---------------
+- node.addEventListener(event, callback);
+- node.removeEventListener(event, callback);
+* The callback reference should be same to remove 
+- callback is function which goes into another function as an argument
+- With the help of Event Listener we can have multiple event on same element 
+
+USE CASE 
+--------
+1. Inline Handling -> Drawback (HTML code becomes bulky)
+2. JS node.event = () => { 
+    // handle here 
+    } -> Drawback (Only 1 Event can be handled)
+
+Remove Event Listener we have to pass the function to a variable otherwise it will take the remove function as another function and will not work 
