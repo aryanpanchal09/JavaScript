@@ -40,3 +40,25 @@ btn1.addEventListener("dblclick", () => {
 });
 
 btn1.removeEventListener("click", handler3);
+
+let modeBtn = document.querySelector("#btn")
+let currMode = "light";
+let body = document.querySelector("body");
+
+modeBtn.addEventListener("click", () => {
+  if(currMode === "light") {
+    currMode = "dark";
+    /* document.querySelector("body").style.backgroundColor = "black"; */
+    /* document.querySelector("body").classList.add("dark"); */
+    body.classList.add("dark");
+    body.classList.remove("light");
+  }else {
+    currMode = "light";
+    /* document.querySelector("body").style.backgroundColor = "white"; */
+    /* document.querySelector("body").classList.add("light"); */
+    body.classList.add("light");
+    body.classList.remove("dark");
+  }
+
+  console.log(currMode);
+})
