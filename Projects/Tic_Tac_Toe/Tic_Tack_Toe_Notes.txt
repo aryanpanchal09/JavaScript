@@ -2,3 +2,10 @@ coolors.co -> Theme for website
 
 Tic Tac Toe Game Winning Pattern if we give all the squares position 
 Winning Pattern = 0,1,2 - 3,4,5 - 6,7,8 - 0,3,6 - 1,4,7 - 2,5,8 - 0,4,8 - 2,4,6
+
+IMPORTANT PRACTISE PROBLEM 
+--------------------------
+Implement the login for "Draw" condition. You have to track when the game has no winner. In this case, print a different message in the msg<p>.
+
+Hint - Use a new variable count, which counts button clicks. When the total count reaches 9 but Game has no winners, that mean the Game was a Draw.
+

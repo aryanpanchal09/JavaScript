@@ -34,7 +34,6 @@ boxes.forEach((box) => {
             turn0 = true;
         }
         box.disabled = true;
-
         checkWinner();
     });
 });
@@ -66,7 +65,6 @@ const checkWinner = () => {
             boxes[pattern[1]].innerText,
             boxes[pattern[2]].innerText
         ); */
-
         let pos1Val = boxes[pattern[0]].innerText;
         let pos2Val = boxes[pattern[1]].innerText;
         let pos3Val = boxes[pattern[2]].innerText;
@@ -79,6 +77,17 @@ const checkWinner = () => {
         }
     }
 };
+
+/* const btncount = () = {
+    for(let count of btncount){
+        let btncount = 9;
+        if(btncount == 9 && )
+    }
+}
+ */
+const matchDraw = () => {
+    msg.innerText = "Match is Draw";
+}
 
 newGameBtn.addEventListener("click", resetGame);
 resetBtn.addEventListener("click", resetGame);
