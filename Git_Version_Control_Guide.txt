@@ -211,3 +211,4 @@ If You Haven’t Pushed the Commit Yet
 ------------------------------------
 This will modify the last commit message locally
 - git commit --amend -m "New commit message"
+- git commit --amend -m "-"
