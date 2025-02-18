@@ -1,5 +1,25 @@
 CLASSES & OBJECTS 
 -----------------
+CLASS : A class is a blueprint for creating objects. It defines the properties and methods that the objects created from the class will have. Classes were introduced in ES6 (ECMAScript 2015) to make object-oriented programming easier.
+
+OBJECTS : An object is an instance of a class. It contains the properties and methods defined by the class.
 
 PROTOTYPES IN JS
 ----------------
+A javascript object is an entity having state and behaviour (properties and method)
+JS objects have a special property called prototype 
+We can set prototype using __proto__ 
+
+*If object & prototype have same method, object's method will be used
+
+CLASSES IN JS
+-------------
+Class is a program-code template for creating objects 
+Those objects will have some state (variables) & some behaviour (functions) inside it 
+
+class MyClass{
+    constructor() {...}
+    myMethod() {...}
+}
+
+let myObj = new MyClass();
