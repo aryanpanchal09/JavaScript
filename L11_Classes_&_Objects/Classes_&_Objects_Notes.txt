@@ -23,3 +23,38 @@ class MyClass{
 }
 
 let myObj = new MyClass();
+
+CONSTRUCTOR 
+-----------
+Constructor() method is 
+- automatically invoked by new 
+- initializes object 
+
+- new keyword find the constructor if not find then it automatically creates constructor 
+
+class MyClass {
+    constructor() {...}
+    myMethod() {...}
+}
+
+INHERITANCE IN JS 
+-----------------
+inheritance is passing down properties & methods from parent class to child class 
+
+class Parent {
+
+}
+
+class Child extends Parent {
+
+}
+
+If Child & Parent have same method, child's method will be used. [Method Overriding]
+
+SUPER KEYWORD 
+-------------
+The super keyword is used to call the constructor of its parent class to access the parent's properties and methods 
+
+super(args) // calls parent's constructor 
+
+super.parentMethod(args)
