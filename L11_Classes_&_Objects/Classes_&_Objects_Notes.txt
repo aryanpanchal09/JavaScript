@@ -58,3 +58,20 @@ The super keyword is used to call the constructor of its parent class to access 
 super(args) // calls parent's constructor 
 
 super.parentMethod(args)
+
+PRACTISE QUESTIONS 
+------------------
+You are creating a website for your colledge. Create a class User with 2 properties, name & email. It also has a method called viewData() that allows user to view website data 
+
+Create a new class called Admin which inherits from User. Add a new method called editData to Admin that allows it to edit website data
+
+ERROR HANDLING 
+--------------
+try-catch 
+
+try {
+    ... normal code 
+} catch(err) {
+    // err is error object 
+    ... handling error
+}
