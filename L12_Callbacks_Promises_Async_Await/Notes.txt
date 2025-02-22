@@ -13,3 +13,17 @@ Due to synchronous programming, sometimes imp instruction get blocked due to som
 CALLBACKS
 ---------
 A callback is a function passed as an argument to another function
+
+CALLBACK HELL 
+-------------
+Nested callbacks stacked below one another forming a pyramid structure (Pyramid of Doom)
+This style of programming becomes difficult to understand & manage
+
+PROMISES 
+--------
+Promise is for "eventual" completion of task. It's an object in JS. 
+It's a solution to callback hell 
+
+let promise = new Promise((resolve, reject) => {...})
+
+*resolve & reject are callbacks provided by JS
