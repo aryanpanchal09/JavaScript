@@ -27,3 +27,11 @@ It's a solution to callback hell
 let promise = new Promise((resolve, reject) => {...})
 
 *resolve & reject are callbacks provided by JS
+
+Promise State 
+-------------
+1. Pending : the result is undefined 
+2. Fullfilled [resolved] : the result is a value (fullfilled) | resolve(result)
+3. Rejected : the result is an error object | reject(error)
+
+*Promise has state (pending, fullfilled) & some result(result for resove & error for reject)
