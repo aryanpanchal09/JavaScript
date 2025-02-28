@@ -35,3 +35,7 @@ Promise State
 3. Rejected : the result is an error object | reject(error)
 
 *Promise has state (pending, fullfilled) & some result(result for resove & error for reject)
+
+.then() & .catch()
+promise.then((res) => {...})
+promise.catch((err) => {...})
