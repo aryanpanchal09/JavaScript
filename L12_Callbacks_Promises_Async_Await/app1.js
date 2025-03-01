@@ -26,7 +26,7 @@ function getData(dataId) {
 }
 
 //Async-await
-async function getAllData() {
+/* async function getAllData() {
   console.log("Data 01");
   await getData(1);
   console.log("Data 02");
@@ -35,7 +35,18 @@ async function getAllData() {
   await getData(3);
   console.log("Data 04");
   await getData(4);
-}
+} */
+
+(async function () {
+  console.log("Data 01");
+  await getData(1);
+  console.log("Data 02");
+  await getData(2);
+  console.log("Data 03");
+  await getData(3);
+  console.log("Data 04");
+  await getData(4);
+})();
 
 /*
 function getData(dataId, getNextData) {
