@@ -25,5 +25,9 @@ FUNCTION findMissingElements(array, expectedRange)
 2. Check for missing elements: If a number is not found in the original array, add it to `missingElements`.
 3. Return the missing numbers.
 
+<<<<<<< HEAD
 Would you like an example implementation in JavaScript? 🚀
 */
+=======
+*/
+>>>>>>> 3d99c5ed9d6aec38bcaabd7e63d72e5a7eced694
