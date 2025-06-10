@@ -1,11 +1,11 @@
 /* Fint the secong largest value in an array */
 
 function secondlarge(arr) {
-    const num = [...new Set(arr)].sort((a,b) => b - a);
-    return num.length >= 2 ? num[1] : null;
+  const num = [...new Set(arr)].sort((a, b) => b - a);
+  return num.length >= 2 ? num[1] : null;
 }
 
-const number = [1,2,3,4,5,6,7,8,9];
+const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(secondlarge(number));
 
 /*

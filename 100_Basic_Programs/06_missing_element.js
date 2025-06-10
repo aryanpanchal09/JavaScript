@@ -1,9 +1,9 @@
 function findMissing(arr) {
-    const complete = Array.from({length:10},(_,i) => i + 1);
-    return complete.filter(num => !arr.includes(num));
+  const complete = Array.from({ length: 10 }, (_, i) => i + 1);
+  return complete.filter((num) => !arr.includes(num));
 }
 
-const numbers = [1,2,3,4,5,6,7];
+const numbers = [1, 2, 3, 4, 5, 6, 7];
 console.log(findMissing(numbers));
 
 /* Here is the pseudocode for your `findMissing` function:
@@ -19,6 +19,17 @@ FUNCTION findMissing(array)
 
     RETURN missingNumbers
 ```
+
+function findMissing(array) {
+    const completeList = Array.from({ length: 10 }, (_, i) => i + 1);
+    const missingNumbers = [];
+    for (const number of completeList) {
+        if (!array.includes(number)) {
+            missingNumbers.push(number);
+        }
+    }
+    return missingNumbers;
+}
 
 **Explanation:**
 1. Generate a list of numbers from 1 to 10.
