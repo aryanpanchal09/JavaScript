@@ -33,3 +33,28 @@ const min = Math.min(...arr);
 
 console.log(max);
 console.log(min);
+
+/* Alternate Method */
+
+{
+  // ...existing code...
+
+  const array = [4, 7, 1, 9, 12, 5];
+
+  let max = array[0];
+  let min = array[0];
+
+  for (const number of array) {
+    if (number > max) {
+      max = number;
+    }
+    if (number < min) {
+      min = number;
+    }
+  }
+
+  console.log("Max:", max);
+  console.log("Min:", min);
+
+  // ...existing code...
+}

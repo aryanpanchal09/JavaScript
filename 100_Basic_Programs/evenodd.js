@@ -25,3 +25,17 @@ console.log(evens);
 
 const odds = number.filter((n) => n % 2 !== 0);
 console.log(odds);
+
+/* 
+function evenodd(array):
+    create empty list called even
+    create empty list called odd
+
+    for each number in array:
+        if number is divisible by 2:
+            add number to even
+        else:
+            add number to odd
+
+    return both even and odd lists
+*/

@@ -8,6 +8,17 @@ function secondlarge(arr) {
 const number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
 console.log(secondlarge(number));
 
+/* 
+FUNCTION secondlarge(array)
+    CREATE a set from array to remove duplicates
+    CONVERT the set back to a list
+    SORT the list in descending order
+    IF length of list >= 2 THEN
+        RETURN the element at index 1 (second largest)
+    ELSE
+        RETURN null
+*/
+
 /*
 ```
 FUNCTION findSecondLargest(array)
@@ -26,7 +37,6 @@ FUNCTION findSecondLargest(array)
 
     RETURN secondLargest
 ```
-
 ### Explanation:
 1. Initialize variables: `largest` and `secondLargest` are both set to the smallest possible value.
 2. Iterate through the array:
@@ -36,3 +46,29 @@ FUNCTION findSecondLargest(array)
 
 Would you like to see an optimized version in JavaScript?
 */
+
+{
+  function findSecondLargest(array) {
+    if (array.length < 2) {
+      return "Array should have at least two elements";
+    }
+
+    let largest = Number.MIN_SAFE_INTEGER;
+    let secondLargest = Number.MIN_SAFE_INTEGER;
+
+    for (const number of array) {
+      if (number > largest) {
+        secondLargest = largest;
+        largest = number;
+      } else if (number > secondLargest && number !== largest) {
+        secondLargest = number;
+      }
+    }
+
+    return secondLargest;
+  }
+
+  // Example usage:
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+  console.log(findSecondLargest(arr)); // Output: 8
+}
