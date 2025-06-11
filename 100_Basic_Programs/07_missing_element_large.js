@@ -24,5 +24,4 @@ FUNCTION findMissingElements(array, expectedRange)
 1. Iterate through the expected range: This could be a sequence from `min(array)` to `max(array)`.
 2. Check for missing elements: If a number is not found in the original array, add it to `missingElements`.
 3. Return the missing numbers.
-
 */

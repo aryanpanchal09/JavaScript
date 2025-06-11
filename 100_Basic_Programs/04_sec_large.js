@@ -69,6 +69,6 @@ Would you like to see an optimized version in JavaScript?
   }
 
   // Example usage:
-  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
-  console.log(findSecondLargest(arr)); // Output: 8
+  const arr = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+  console.log(findSecondLargest(arr)); // Output: 9
 }
