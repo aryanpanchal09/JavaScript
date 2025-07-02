@@ -1,10 +1,22 @@
-function missingnumber(arr) {
-  const actualnumber = [];
+/**
+ * @param {number} n
+ * @return {Function} counter
+ */
+var createCounter = function (n) {
+  return function () {
+    return n++;
+  };
+};
 
-  for (let i = 1; i <= 10; i++) {
-    if (!arr.includes(i)) actualnumber.push(i);
-  }
-  return actualnumber;
-}
+/**
+ * const counter = createCounter(10)
+ * counter() // 10
+ * counter() // 11
+ * counter() // 12
+ */
 
-console.log(missingnumber([1, 2, 3, 6, 9]));
+const counter1 = createCounter(10);
+counter1();
+counter1();
+counter1();
+console.log(counter1);
