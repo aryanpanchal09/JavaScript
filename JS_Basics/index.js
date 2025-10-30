@@ -1,4 +1,4 @@
-console.log('hello');
+console.log("hello");
 
 const accId = 1234;
 console.log(accId);
@@ -8,9 +8,9 @@ var pass = "1234";
 
 // accId = "asdf";
 
-console.table([accId, email, pass, accId])
+console.table([accId, email, pass, accId]);
 
-// DATATYPES 
+// DATATYPES
 
 /* number 
 BigInt
@@ -19,9 +19,9 @@ Boolean
 smallint
 null => standalone value 
 undefined 
-Symbol => unique */ 
+Symbol => unique */
 
-// object 
+// object
 
-console.log(typeof undefined); // undefined 
-console.log(typeof null); // object 
+console.log(typeof undefined); // undefined
+console.log(typeof null); // object
