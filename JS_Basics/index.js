@@ -9,3 +9,19 @@ var pass = "1234";
 // accId = "asdf";
 
 console.table([accId, email, pass, accId])
+
+// DATATYPES 
+
+/* number 
+BigInt
+string
+Boolean
+smallint
+null => standalone value 
+undefined 
+Symbol => unique */ 
+
+// object 
+
+console.log(typeof undefined); // undefined 
+console.log(typeof null); // object 
