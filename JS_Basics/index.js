@@ -66,3 +66,48 @@ console.log(convertNegative);
 
 console.log("1" + 2); /* left to right conversion first string other numbers where also converted to string */
 console.log(1 + 2 + "2"); /* 32 first two numbers addition and remaining string whole string  */
+
+/* Comparision  */
+
+console.log("2" > 1); /* true - automatic comparision */
+console.log("02" > 1); /* true - 02 string will be converted to number */
+
+/* to tackle all this issues we use typescript */
+
+console.log(null > 0); /* true */
+console.log(null == 0); /* false */
+console.log(null >= 0); /* true */
+
+/* comparision converts null to a number, treating it as 0 */
+
+console.log("2" === 0); /* false as comparision operator and equality check (>, <) works differently */
+
+/* Primitive - Call by value */
+
+/* Primitive Data Types - String, Boolean, Null, BigInt, Undefined, Symbol, Number */
+
+/* Non Primitive - Call by reference */
+
+/* Non Primitive Data Type - Functions, Objects, Array */
+
+/* JS Dynamic type - Static Type  */
+
+const id = Symbol('123'); 
+const anotherId = Symbol('123');
+/* Eventhough we declare Symbol same but still it's different for both */
+console.log(id);
+console.log(anotherId);
+
+const bigNumber = 1234567891011121314151617181920n;
+/* to declare bigint write n at the end of the number */
+console.log(typeof bigNumber);
+
+/* arrays, objects, functions */
+const valuesToStore = ["1", "2", "3"]
+console.log(valuesToStore);
+
+const valuestwo = {
+    "key": "value",
+    "name": "anyname",
+}
+console.log(valuestwo)
