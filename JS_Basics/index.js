@@ -111,3 +111,15 @@ const valuestwo = {
     "name": "anyname",
 }
 console.log(valuestwo)
+
+/* string */
+
+let formName = "  name  ";
+console.log(formName.trim());
+
+let formUrl = "https://localhost:8080/dashboard%20history"
+console.log(formUrl.replace('%20', '-'))
+
+console.log(formUrl.includes('localhost'))
+
+console.log(formUrl.split('%20'))
