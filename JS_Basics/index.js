@@ -123,3 +123,11 @@ console.log(formUrl.replace('%20', '-'))
 console.log(formUrl.includes('localhost'))
 
 console.log(formUrl.split('%20'))
+
+/* Number & Maths */
+
+const newValue = 300;
+console.log(newValue);
+
+const valueNew = new Number(300)
+console.log(valueNew)
