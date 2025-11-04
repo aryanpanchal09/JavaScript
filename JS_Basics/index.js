@@ -114,6 +114,24 @@ console.log(valuestwo)
 
 /* string */
 
+let stringOne = "one"
+let stringTwo = "two"
+
+/* Traditional Method */
+
+console.log(stringOne + stringTwo + "Traditional Method");
+
+/* New Method */
+
+console.log(`New method is string interpolation ${stringOne.toUpperCase()} add ${stringTwo.toLocaleUpperCase()} we can also use many methods with it`);
+
+/* Another way to declare String - it's like key value pair behave like Object but still a string */
+
+let stringThree = new String('three');
+console.log(stringThree.indexOf('e'))
+
+console.log()
+
 let formName = "  name  ";
 console.log(formName.trim());
 
@@ -131,3 +149,27 @@ console.log(newValue);
 
 const valueNew = new Number(300)
 console.log(valueNew)
+
+console.log(valueNew.toString().length);
+
+const otherValues = 1123.89;
+console.log(otherValues.toFixed(1));
+console.log(otherValues.toPrecision(4));
+
+const hundreds = 1000000000;
+console.log(hundreds.toLocaleString());
+console.log(hundreds.toLocaleString('en-IN'))
+
+/* 
+Number.MAX_VALUE
+Number.MIN_VALUE
+Number.SAFE_MAX_INTEGER
+*/
+
+console.log(Math);
+console.log(Math.random());
+console.log(Math.PI);
+console.log(Math.abs(-4));
+console.log(Math.round(4.8));
+console.log(Math.ceil(4.5));
+console.log(Math.floor(4.5));
