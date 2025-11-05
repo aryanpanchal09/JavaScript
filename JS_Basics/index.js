@@ -178,3 +178,25 @@ const max = 30;
 const min = 10;
 
 console.log(Math.floor(Math.random() * (max - min + 1)) + min)
+
+/* DATES */
+
+let myDate = new Date();
+console.log(myDate);
+console.log(myDate.toString());
+console.log(myDate.toDateString());
+console.log(myDate.toISOString());
+console.log(myDate.toLocaleString());
+console.log(myDate.toLocaleDateString());
+
+/* Date typeof is an Object */
+
+let myCreatedDate = new Date('2025', '0', '14', '8', '3'); /* Month starts from 0 in JS */
+console.log(myCreatedDate.toDateString())
+console.log(myCreatedDate.toLocaleString())
+
+let mySpecificDate = new Date("01-01-2001");
+console.log(mySpecificDate.toLocaleString());
+
+let timeStamp = Date.now();
+console.log(timeStamp);
