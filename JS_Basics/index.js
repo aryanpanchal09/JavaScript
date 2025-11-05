@@ -200,3 +200,16 @@ console.log(mySpecificDate.toLocaleString());
 
 let timeStamp = Date.now();
 console.log(timeStamp);
+console.log(myCreatedDate.getTime()); /* timestamp - this new time will give accurate timestamp */
+console.log(Math.floor(Date.now()/1000));
+
+let newDate = new Date();
+console.log(newDate.getMilliseconds());
+console.log(newDate.getMonth());
+
+/* to define properties */
+
+/* object define */
+console.log(newDate.toLocaleString('default', {
+    weekend: "long"
+}))
