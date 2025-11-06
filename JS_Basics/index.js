@@ -213,3 +213,36 @@ console.log(newDate.getMonth());
 console.log(newDate.toLocaleString('default', {
     weekend: "long"
 }))
+
+/* 
+() - paranthesis
+{} - braces, curly brackets
+[] - square brackets
+*/
+
+/* Array */
+
+let myArray = [0, 1, 2, 3, 4, 5]
+console.log(myArray)
+console.log(myArray.pop())
+console.log(myArray.push(1))
+console.log(myArray.unshift(7))
+console.log(myArray.shift())
+console.log(myArray)
+
+console.log(myArray.indexOf(2)) /* For false value it will always returns -1 */
+console.log(myArray.includes(2))
+
+let meArr = myArray.join()
+console.log(meArr)
+
+/* slice and splice */
+
+console.log("A", meArr);
+
+const myn1 = meArr.slice(1,3)
+console.log(myn1)
+console.log("B", meArr)
+// const myn2 = meArr.splice(1,3)
+// console.log(myn2)
+console.log("C", meArr)
