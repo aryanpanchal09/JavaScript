@@ -238,11 +238,42 @@ console.log(meArr)
 
 /* slice and splice */
 
-console.log("A", meArr);
+let sliceSplice = [0, 1, 2, 3, 4, 5];
+console.log("A", sliceSplice);
 
-const myn1 = meArr.slice(1,3)
-console.log(myn1)
-console.log("B", meArr)
-// const myn2 = meArr.splice(1,3)
-// console.log(myn2)
-console.log("C", meArr)
+const myn1 = sliceSplice.slice(1, 3);
+console.log(myn1);
+console.log("B", sliceSplice);
+
+const myn2 = sliceSplice.splice(1, 3);
+console.log(myn2);
+console.log("C", sliceSplice);
+console.log(myn2);
+
+/* Array */
+
+const marvel = ["ironman", "dr strange"];
+const dc = ["superman", "batman"];
+const sony = ["spiderman", "morbius"];
+
+let heros = marvel.concat(dc, sony);
+let real_heros = [...sony, ...dc, ...marvel, ["1", "2"], "3"]
+console.log(heros);
+console.log(real_heros);
+
+let real_values = real_heros.flat(2);
+console.log(real_values)
+
+/* convert in array */
+
+console.log(Array.isArray("is it array"));
+console.log(Array.from("is it array"));
+console.log(Array.from({name: "no name"})); /* returns empty array as it don't know what to convert so specify it */
+
+/* Another concat method for Array */
+
+let score1 = 100;
+let score2 = 200;
+let score3 = 300;
+
+console.log(Array.of(score1, score2, score3));
