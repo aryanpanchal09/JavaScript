@@ -297,3 +297,7 @@ const JsUser = {
 
 console.log(JsUser[sym1]);
 console.log(sym1);
+
+JsUser.name = "aryan panchal"
+Object.freeze(JsUser);
+console.log(JsUser)
