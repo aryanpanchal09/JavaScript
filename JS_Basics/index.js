@@ -300,4 +300,12 @@ console.log(sym1);
 
 JsUser.name = "aryan panchal"
 Object.freeze(JsUser);
-console.log(JsUser)
+
+const JsUser1 = {
+    name: "aryan", /* here name is also stored as string */
+    anotherObject : {
+        age: "16"
+    }
+};
+
+console.log(JsUser1.anotherObject) /* if value doesn't exist use ? */
