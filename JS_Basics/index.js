@@ -314,7 +314,18 @@ console.log(JsUser1.anotherObject) /* if value doesn't exist use ? */
 
 const obj1 = {1: "a", 2: "b"}
 const obj2 = {3: "c", 4: "d"}
-const obj3 = Object.assign(obj1, obj2)
+const obj3 = Object.assign(obj1, obj2) // one way to get value
 console.log(obj3);
 const obj4 = Object.assign({}, obj1, obj2, obj3) // {} optional parameter for maximum robustness
 console.log(obj4);
+const obj5 = {...obj1, ...obj2, ...obj3} // spread operator 
+console.log(obj5);
+
+const JsUser = {
+    name: "aryan", /* here name is also stored as string */
+    "full name": "aryan panchal", /* here "full name" now only be accessed with JsUser["full name"] not with JsUser.full name it will give error */
+    age: 16
+};
+
+console.log(Object.keys(JsUser));
+console.log(Object.values(JsUser)); /* to get values and keys */

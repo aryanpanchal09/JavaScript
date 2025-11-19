@@ -1,21 +1,6 @@
-// Singleton
-// Objects.create
-
-// print a symbol in the object
-const sym1 = "key1";
-console.log(sym1);
-
-// Object Literals 
-const JsUser = {
-    name: "aryan", /* here name is also stored as string */
-    "full name": "aryan panchal", /* here "full name" now only be accessed with JsUser["full name"] not with JsUser.full name it will give error */
-    age: 16,
-    [sym1]: "mykey1",
-};
-
-console.log(JsUser[sym1]);
-console.log(sym1);
-
-JsUser.name = "aryan panchal"
-Object.freeze(JsUser);
-console.log(JsUser)
+const obj1 = {1: "a", 2: "b"}
+const obj2 = {3: "c", 4: "d"}
+const obj3 = Object.assign(obj1, obj2)
+console.log(obj3);
+const obj4 = Object.assign({}, obj1, obj2, obj3) // {} optional parameter for maximum robustness
+console.log(obj4);
