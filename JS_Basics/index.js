@@ -344,3 +344,42 @@ const course = {
 const { courseName: cn, price, courseInstructor } = course;
 
 console.log(cn);
+
+/* Destructuring Example for React */
+
+const navbar = ({company}) => {
+
+}
+
+navbar(company = "hitest");
+
+console.log(company)
+
+/* JSON API */
+{
+    "name": "pc",
+    "number": 123,
+    "object": null
+}
+
+/* Function */
+
+
+function sayMyname(){
+    console.log("1")
+    console.log("2")
+    console.log("3")
+    console.log("4")
+    console.log("5")
+    console.log("")
+}
+
+function five(){
+    sayMyname();
+    sayMyname();
+    sayMyname();
+    sayMyname();
+    sayMyname();
+}
+
+five();
