@@ -391,3 +391,19 @@ function addtownumber(number1, number2){
 }
 let sum = addtownumber(1,2);
 console.log(sum)
+
+/* function userloggedin(username){
+    return `${username} just logged in`
+} */
+
+function userloggedin(username = "pc"){ /* we can give default value till no value is given  */
+    if(username === undefined){ /* if(!username) - can also be written like that */
+        console.log("Please enter some username")
+        return
+    }
+    return `${username} just logged in`
+}
+
+
+console.log(userloggedin()) /* if i had not passed anything it will give undefined just logged in */
+console.log(userloggedin("Aryan")) 
