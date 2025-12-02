@@ -407,3 +407,25 @@ function userloggedin(username = "pc"){ /* we can give default value till no val
 
 console.log(userloggedin()) /* if i had not passed anything it will give undefined just logged in */
 console.log(userloggedin("Aryan")) 
+
+/* function object calling  */
+
+function calculate(num1){
+    return num1
+}
+console.log(calculate(200))
+
+function calculate(num2){
+    return num2
+}
+console.log(calculate(200, 400, 600))
+
+function calculate(...num3){
+    return num3
+}
+console.log(calculate(200, 400, 600))
+
+function calculate(n01, n02, ...num03){
+    return {n01, n02, num03} /* can be return as an array[] or object{}  */
+}
+console.log(calculate(200, 400, 600, 2000))
