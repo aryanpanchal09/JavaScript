@@ -440,3 +440,20 @@ function handleArray(getarray){
 
 // console.log(handleArray([200,400,600,800]))
 console.log(handleArray(user))
+
+/* scope */
+
+function one(){
+    const username = "aryan"
+
+    function two(){
+        console.log(username)
+        const website = "youtube"
+        console.log(website)
+    }
+
+    return two;
+
+}
+const callTwo = one();
+callTwo()
