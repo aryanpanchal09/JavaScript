@@ -429,3 +429,14 @@ function calculate(n01, n02, ...num03){
     return {n01, n02, num03} /* can be return as an array[] or object{}  */
 }
 console.log(calculate(200, 400, 600, 2000))
+
+/* Handle Array in Function */
+
+const user = [200, 300, 400]
+
+function handleArray(getarray){
+    return getarray[0]
+}
+
+// console.log(handleArray([200,400,600,800]))
+console.log(handleArray(user))
