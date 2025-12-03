@@ -457,3 +457,17 @@ function one(){
 }
 const callTwo = one();
 callTwo()
+
+/* function declaration */
+
+console.log("addOne return", addOne(5))
+function addOne(num) {
+    return num + 1
+} /* here we can declare it above */
+
+/* The only difference between two is the declaration  */
+
+const addTwo = function(num){ /* here addTwo is known as expression */
+    return num + 1
+}
+console.log("addTwo return", addTwo(7))
