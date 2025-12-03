@@ -471,3 +471,85 @@ const addTwo = function(num){ /* here addTwo is known as expression */
     return num + 1
 }
 console.log("addTwo return", addTwo(7))
+
+/* this keyword  */
+
+/* This keyword used for current context  */
+
+const user = {
+    username: "aryan",
+    price: 999,
+    welcomeMessage: function(){
+        console.log(`${this.username}, welcome to website`);
+        console.log(this)
+    }
+}
+
+user.welcomeMessage()
+user.username = "sam" /* Here the current context/value got changed before it was Aryan */
+user.welcomeMessage() /* it runs as method and will print console.log */
+
+console.log(this); /* now this refer to empty object as it's in node environment as there is no context/value in global */
+
+/* In brower the global object is window object that's why we are able to capture window event like click, form-submit etc etc */
+
+
+function pc(){
+    let username = "pc"
+    console.log(this); /* we will get diff values */
+    console.log(this.username); /* We can't use them as this keyword can't be used in function it can only be used in object only it will always print undefined */
+}
+pc()
+
+/* <ref *1> Object [global] {
+  global: [Circular *1],
+  clearImmediate: [Function: clearImmediate],
+  setImmediate: [Function: setImmediate] {
+    [Symbol(nodejs.util.promisify.custom)]: [Getter]
+  },
+  clearInterval: [Function: clearInterval],
+  clearTimeout: [Function: clearTimeout],
+  setInterval: [Function: setInterval],
+  setTimeout: [Function: setTimeout] {
+    [Symbol(nodejs.util.promisify.custom)]: [Getter]
+  },
+  queueMicrotask: [Function: queueMicrotask],
+  structuredClone: [Getter/Setter],
+  atob: [Getter/Setter],
+  btoa: [Getter/Setter],
+  performance: [Getter/Setter],
+  fetch: [Function: fetch],
+  navigator: [Getter],
+  crypto: [Getter]
+} */
+
+/* arrow function */
+
+const pc = function() {
+    let username = "pc"
+    console.log(this.username)
+}
+pc()
+
+
+const pc2 = () => {
+    let username = "pc"
+    console.log(this.username)
+}
+pc2()
+
+/* Implicit and Explicit Return */
+
+/* Implicit Return */
+
+const sum = (num1, num2) => (num1 + num2) /* No need to write return if it's executing in 1 line or statement */
+console.log(sum(1,2))
+const sum1 = (num1, num2) => num1 + num2
+console.log(sum1(1,2))
+
+/* Explicit Return */
+
+const sum2 = (num1, num2) => {
+    return num1 + num2
+}
+console.log(sum2(1,2))
