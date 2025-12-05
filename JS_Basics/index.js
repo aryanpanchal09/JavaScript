@@ -546,6 +546,8 @@ const sum = (num1, num2) => (num1 + num2) /* No need to write return if it's exe
 console.log(sum(1,2))
 const sum1 = (num1, num2) => num1 + num2
 console.log(sum1(1,2))
+const sum3 = (num1, num2) => ({username: "aryan"}) /* to return a object in a function you must wrap them in () */
+console.log(sum3(3,4))
 
 /* Explicit Return */
 
