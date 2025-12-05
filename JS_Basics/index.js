@@ -557,19 +557,35 @@ const sum2 = (num1, num2) => {
 console.log(sum2(1,2))
 
 /* IIFE - Immediately Invoked Function Expression */
+
 /* An IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. It’s a common pattern used to create a private scope, helping avoid polluting the global namespace.
  */
+
 (function pc2() {
-  console.log("DB Connected 2");
+  console.log("DB Connected 2"); /* named iife */
 })();
+
 function pc() {
   console.log("DB Connected");
 }
 pc();
+
+(() => {
+  /* argument */
+  console.log("DB Connected 3"); /* unamed iife  */
+})(); /* parameter */
+
+((name) => {
+  /* argument */
+  console.log(`DB Connected 4 ${name}`); /* unamed iife with parameter  */
+})("Aryan"); /* parameter */
+
 /* To avoid messing up the global space (called the global scope).
 Variables inside an IIFE stay private — they don’t leak outside. */
+
 (function () {
   let secret = "hidden";
   console.log("Inside IIFE");
 })();
 console.log(secret); // Error! secret is not defined
+
