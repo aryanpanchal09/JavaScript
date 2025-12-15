@@ -707,3 +707,12 @@ if (Object.keys(userObj).length === 0) {
 
 /* Falsy Values */
 // 0, -0, false, "", null, undefined, NaN, BigInt 0n
+
+false == 0 
+true 
+
+false == ''
+true
+
+0 == ''
+true
