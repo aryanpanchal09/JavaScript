@@ -675,3 +675,35 @@ switch (month) {
         console.log("default case match");
         break;
 }
+
+/* Truthy & Falsy Values */
+
+// const user = ""; /* user not identified as it's empty string */
+const user = []; /* user logged in as it's array */
+// const user = "aryan@gmail.com"; /* user identified */
+
+/* empty array - true, empty string - false */
+
+if (user) {
+  console.log("User logged in");
+} else {
+  console.log(`User not identified ${user}`);
+}
+
+/* To check array use it's length property*/
+
+if (user.length === 0) {
+  console.log("Empty Array");
+}
+
+/* To check empty object  */
+const userObj = {};
+if (Object.keys(userObj).length === 0) {
+  console.log("Empty Object");
+}
+
+/* Truthy Values */
+// "0", "false", " ", {}, [], function(){} - empty function
+
+/* Falsy Values */
+// 0, -0, false, "", null, undefined, NaN, BigInt 0n
