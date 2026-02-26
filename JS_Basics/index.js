@@ -732,3 +732,28 @@ while (index <= 10){
     console.log(`The value of index is ${index}`)
     index = index + 2;
 }
+
+// While Loop for Arrays 
+
+let myArray = ['flash', 'batman', 'superman']
+let arr = 0;
+while (arr < myArray.length) {
+    console.log(`Value is ${myArray[arr]}`)
+    arr = arr + 1;
+}
+
+// DO WHILE LOOP
+
+let score = 1;
+
+do {
+  console.log(`The score is ${score}`);
+  score++;
+} while (score <= 10);
+
+// HIGH ORDER ARRAY LOOPS
+
+const arr = [1, 2, 3, 4, 5];
+for (const num of arr) {
+    console.log(num);
+}
