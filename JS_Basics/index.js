@@ -724,3 +724,11 @@ let val1;
 val1 = null ?? 10 /* used for null safety */
 
 console.log(val1)
+
+// LOOPS 
+
+let index = 0;
+while (index <= 10){
+    console.log(`The value of index is ${index}`)
+    index = index + 2;
+}
