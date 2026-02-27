@@ -776,3 +776,24 @@ for(const [key, value] of map){
     console.log(`${key} :- ${value}`)
     console.log(key, ':' ,value)
 }
+
+// OBJECTS
+const myObject = {
+  js: "javascript",
+  cpp: "C++",
+  rb: "ruby",
+};
+
+for (const key in myObject) {
+  console.log(key);
+  console.log(myObject[key]);
+  console.log(`${key} - ${myObject[key]}`)
+}
+
+// Array For In Loop
+
+const programming = ["js", "ruby", "py"]
+
+for (const key in programming) {
+    console.log(programming[key]);
+}
