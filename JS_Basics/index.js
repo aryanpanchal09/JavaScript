@@ -807,3 +807,18 @@ function printMe(item) {
 }
 
 coding.forEach(printMe);
+
+// IN MORE DETAIL
+
+coding.forEach((item, index, arr) => {
+  console.log(item, index, arr);
+});
+
+const myCoding = [
+  { language: "javascript", file: "js" },
+  { language: "java", file: "java" },
+];
+
+myCoding.forEach((item) => {
+    console.log(item.language)
+})
