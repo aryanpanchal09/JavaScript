@@ -797,3 +797,13 @@ const programming = ["js", "ruby", "py"]
 for (const key in programming) {
     console.log(programming[key]);
 }
+
+// CALL BACK FUNCTION 
+
+const coding = ["javascript", "react", "sql"];
+
+function printMe(item) {
+  console.log(item);
+}
+
+coding.forEach(printMe);
