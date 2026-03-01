@@ -877,11 +877,33 @@ console.log(newNums)
 
 // REDUCE
 
+// REDUCE
+
 const myNums = [1,2,3]
 
 const myTotal = myNums.reduce(function(acc, currval){
-    console.log(acc: ${acc} and curvale: ${currval});
+    console.log(`acc: ${acc} and curvale: ${currval}`);
     return acc + currval
 }, 0)
 
+const myTotals = myNums.reduceRight((acc, curr) => acc+curr, 0)
+
 console.log(myTotal)
+console.log(myTotals)
+
+// REDUCE 
+
+const shop = [
+    {
+        itemName: "js",
+        price: 12999
+    },
+    {
+        itemName: "dev",
+        price: 12999
+    },
+]
+
+const priceToPay = shop.reduce((acc, item) => acc + item.price, 0)
+
+console.log(priceToPay);
